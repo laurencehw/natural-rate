@@ -90,14 +90,20 @@ source("code/07_figures_tables.R")
 - **Inflation Expectations**: University of Michigan survey (FRED: MICH)
 - **Demographics**: OECD old-age dependency ratios
 
+## Author
+
+Laurence Wilse-Samson
+Columbia University School of International and Public Affairs
+Email: lhw2110@columbia.edu
+
 ## Citation
 
 If you use this code, please cite:
 
 ```bibtex
-@article{yourname2025rstar,
+@article{wilsesamson2025rstar,
   title={Rethinking the Natural Rate of Interest: A Critique of the Laubach-Williams Model},
-  author={[Author]},
+  author={Wilse-Samson, Laurence},
   year={2025}
 }
 ```
