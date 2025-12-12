@@ -89,12 +89,20 @@ paths <- list(
 # API KEYS
 # =============================================================================
 
+# API keys - set these as environment variables or in a local .Renviron file
+# Do NOT commit actual API keys to version control!
 api_keys <- list(
-  fred  = "a2efb8590f142e4ff8a528e194b531ef",
-  bea   = "B682A2E4-FECD-408D-BB8B-6C00A9DD667D",
-  bls   = "ef06bca4006f4795a2685671a4cb240c",
-  census = "908c3ef3d1f860c5123a949e8f61822e9e74fba3"
+  fred  = Sys.getenv("FRED_API_KEY", ""),
+  bea   = Sys.getenv("BEA_API_KEY", ""),
+  bls   = Sys.getenv("BLS_API_KEY", ""),
+  census = Sys.getenv("CENSUS_API_KEY", "")
 )
+
+# Check that FRED key is set (required)
+if (api_keys$fred == "") {
+  warning("FRED API key not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html")
+  warning("Set it with: Sys.setenv(FRED_API_KEY='your_key_here')")
+}
 
 # Set FRED API key
 fredr_set_key(api_keys$fred)

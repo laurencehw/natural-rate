@@ -6,6 +6,11 @@ nul
 .RData
 .Ruserdata
 *.Rproj.user/
+*.RData
+
+# Environment/credentials
+.Renviron
+.env
 
 # LaTeX auxiliary files
 *.aux
@@ -20,16 +25,24 @@ nul
 *.fdb_latexmk
 *.synctex.gz
 
-# Data files (large)
-data/raw/*.csv
-data/raw/*.xlsx
+# Data files (large, can be downloaded)
+data/raw/
+data/processed/
 
 # Output files (can be regenerated)
-output/baseline/*.RData
-output/sensitivity/*.RData
-output/alternatives/*.RData
+output/
 
-# Keep PDFs and key outputs
-!paper/*.pdf
-!figures/*.pdf
-!figures/*.png
+# FRBNY replication code (download from official source)
+HLW_model/
+LW_model/
+
+# Literature folder
+_literature/
+
+# Claude config
+.claude/
+
+# Misc
+nul
+*.txt
+!README.txt
