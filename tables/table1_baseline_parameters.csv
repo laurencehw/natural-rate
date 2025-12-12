@@ -1,0 +1,16 @@
+"Parameter","Estimate"
+"a_1 (Output gap AR1)",1.3826
+"a_2 (Output gap AR2)",-0.4408
+"a_3 (IS curve slope)",-0.0768
+"b_1 (Inflation AR1)",0.5786
+"b_2 (Inflation AR2-4)",0.369
+"b_3 (Phillips slope)",0.0469
+"b_4 (Oil price)",0.0026
+"b_5 (Import price)",0.0392
+"c (r* loading on g)",1.0516
+"sigma_1 (Output)",0.4455
+"sigma_2 (Inflation)",0.7566
+"sigma_4 (Potential)",0.503
+"phi (COVID shift)",-0.0972
+"lambda_g",0.0645
+"lambda_z",0.0216

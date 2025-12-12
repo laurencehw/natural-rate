@@ -1,0 +1,35 @@
+# Windows special files
+nul
+
+# R related
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Data files (large)
+data/raw/*.csv
+data/raw/*.xlsx
+
+# Output files (can be regenerated)
+output/baseline/*.RData
+output/sensitivity/*.RData
+output/alternatives/*.RData
+
+# Keep PDFs and key outputs
+!paper/*.pdf
+!figures/*.pdf
+!figures/*.png
