@@ -1,6 +1,6 @@
 # Rethinking the Natural Rate of Interest: A Critique of the Laubach-Williams Model
 
-This repository contains replication code and analysis for a critique of the Laubach-Williams (LW) and Holston-Laubach-Williams (HLW) natural rate of interest (r*) estimation frameworks.
+This repository contains replication code and analysis for a critique of the Laubach-Williams (LW) and Holston-Laubach-Williams (HLW) natural rate of interest (r*) estimation frameworks. It includes R scripts, LaTeX sources, and generated figures/tables for the paper.
 
 ## Paper
 
@@ -32,14 +32,15 @@ natural-rate/
 └── tables/                  # Generated tables (CSV format)
 ```
 
-## Requirements
+## Getting Started
 
-### R Packages
-- Core: `tis`, `nloptr`, `mFilter`, `openxlsx`
-- Data: `fredr`, `httr`, `jsonlite`
-- Analysis: `dplyr`, `tidyr`, `lubridate`, `zoo`, `vars`, `dlm`, `KFAS`
-- Visualization: `ggplot2`, `ggthemes`, `gridExtra`, `scales`
-- Tables: `xtable`, `stargazer`
+### Prerequisites
+- R packages (installed via `code/00_setup.R`):
+  - Core: `tis`, `nloptr`, `mFilter`, `openxlsx`
+  - Data: `fredr`, `httr`, `jsonlite`
+  - Analysis: `dplyr`, `tidyr`, `lubridate`, `zoo`, `vars`, `dlm`, `KFAS`
+  - Visualization: `ggplot2`, `ggthemes`, `gridExtra`, `scales`
+  - Tables: `xtable`, `stargazer`
 
 ### External Dependencies
 
@@ -49,7 +50,8 @@ natural-rate/
 
 Place the extracted folders in `LW_model/` and `HLW_model/` directories.
 
-**API Keys**: You will need a FRED API key (free):
+### API Keys
+You will need a FRED API key (free):
 1. Get a key at https://fred.stlouisfed.org/docs/api/api_key.html
 2. Set it as an environment variable:
    ```r
@@ -57,7 +59,7 @@ Place the extracted folders in `LW_model/` and `HLW_model/` directories.
    ```
    Or add to a `.Renviron` file in the project directory.
 
-## Running the Analysis
+### Running the Analysis
 
 ```r
 # 1. Setup and install packages
@@ -81,6 +83,12 @@ source("code/06_alt_demographics.R")
 source("code/07_figures_tables.R")
 ```
 
+## Outputs
+
+- Figures are written to `figures/` and tables to `tables/`.
+- Intermediate data are stored in `data/` (not committed).
+- The compiled paper PDF lives in `paper/`.
+
 ## Data Sources
 
 - **GDP**: Real GDP (FRED: GDPC1)
@@ -90,7 +98,7 @@ source("code/07_figures_tables.R")
 - **Inflation Expectations**: University of Michigan survey (FRED: MICH)
 - **Demographics**: OECD old-age dependency ratios
 
-## Author
+## Contact
 
 Laurence Wilse-Samson
 Columbia University School of International and Public Affairs
